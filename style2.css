@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    width:1350px;
+    margin: 0;
+    border: Blue 2pt solid;
+    background-image: linear-gradient(45deg, pink,rgb(0, 255, 255));
+    }
+    
+    .nav{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        width: 100%;
+    }.nav ul{
+    margin:0px;
+    background-color: blue;
+}
+.nav ul li{
+    display: inline-block;
+    border-right: white 2pt solid;
+    padding-right:10px;
+}
+.nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+}
+        .nav ul li a:hover{
+        color: green;
+        background-color: bisque;
+        }
+
+    .header{
+        background-image: url("Ice cream bg-img3.jpg");
+        background-size: cover;
+    }
+    #box{        
+    display:inline-block;
+    height: 150px;
+    width: 300px;
+    border: 5px solid red;
+    background-color: black;
+    color: yellow;
+    opacity:0.5;
+    text-align:center;
+    font-size: 40px;
+    margin: 250px 500px;
+    }
+body{
+    margin:0;
+    padding:0; 
+    height:3000px;
+}
+h1{
+    text-align: center;
+    margin: 40px auto;
+    font-size: 40px;
+    color: red;
+}
+h4{
+    text-align:right;
+    font-size:30px;
+}
+.container-fluid{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.container{
+    max-width: 500px;
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+    border: none;
+    padding: 20px;
+}
+fieldset{
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+}
+legend{
+    margin-left: 20px;
+    font-size: 20px;
+}
+input{
+    width: auto;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+h3{
+    margin: 5px 0;
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    text-align: center;
+}
+table td,table th{
+    padding: 5px;
+    margin: 0;
+    border: 1px solid #000000;
+}
+table tr td:last-child{
+    text-align: right;
+}
+ul li{
+    padding: 5px;
+    margin: 10px 0;
+}
