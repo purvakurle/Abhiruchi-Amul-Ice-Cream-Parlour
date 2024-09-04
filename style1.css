@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+width:1350px;
+margin: 0;
+}
+.header{
+    background-image: url("Ice cream bg-img3.jpg");
+    background-size: cover;
+}
+#box{        
+display:inline-block;
+height: 150px;
+width: 300px;
+border: 5px solid red;
+background-color: black;
+color: yellow;
+opacity:0.5;
+text-align:center;
+font-size: 40px;
+margin: 250px 500px;
+}
+body{
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(45deg, pink,rgb(0, 255, 255));
+    border: Blue 2pt solid;
+}
+.nav{
+position:fixed;
+top:0;
+left:0;
+right:0;
+width: 100%;
+}
+.nav ul{
+margin:0px;
+padding-left:43px;
+padding-top:15px;
+
+background-color: blue;
+height: 50px;
+
+}
+.nav ul li{
+display: inline-block;
+border-right: white 2pt solid;
+padding-right:10px;
+font-size: 16px;
+}
+.nav ul li a{
+color: white;
+text-decoration: none;
+font-size: 18px;
+}
+.nav ul li a:hover{
+color: green;
+background-color: bisque;
+}
+.content{
+display: inline-block;
+width: 1225px;
+padding: 20px;
+font-size: large;
+word-spacing: 5px;
+letter-spacing: 1px;
+}
+.lcontent{
+display: inline-block;
+width: 460px;
+float: left;
+border: blue 2pt solid;
+margin: 10px;
+padding: 10px;
+}
+.rcontent{
+display: inline-block;
+width: 450px;
+float: right;
+border: blue 2pt solid;
+margin: 10px;
+}
+.footer{
+color: red;
+}
+td{
+    text-align: center;
+}
+.bgcol{
+    /*background-color:rgb(205, 50, 122);*/
+    color: rgb(255, 217, 0);
+}
+.img-box-1{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("amul-tricone-two-in-one-ice-cream.webp");
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 2px 2px 5px black;
+    float:left;
+}
+.img-box-2{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("amul_tricone_cookie_crunch_deliight.jpg");
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 2px 2px 5px black;
+    float:left;
+}
+.img-box-3{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("amul-tricone-black-currant-1000x1000.webp");
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 2px 2px 5px black;
+    float:left;
+}
+.img-box-4{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("amul-jumbo-cup-chocolate-brownie-ice-cream.webp");
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 2px 2px 5px black;
+    float:left;
+}
+.img-box-5{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("amul-jumbo-cup-fruit-n-nut-fantasy-ice-cream.webp");
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 2px 2px 5px black;
+    float:left;
+}
+.img-box-6{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("Amul-Jumbo-Cup-King-Alphonso.jpg");
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 2px 2px 5px black;
+    float:left;
+}
