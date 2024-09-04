@@ -3,8 +3,8 @@
     font-family: 'Roboto', sans-serif;
 }
 .main{
-width:1350px;
-margin: 0;
+width:100%;
+margin: 0 auto;
 }
 .header{
     background-image: url("Ice cream bg-img3.jpg");
