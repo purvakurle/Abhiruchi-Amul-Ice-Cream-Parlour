@@ -4,8 +4,8 @@
 }
 
 .main{
-    width:1350px;
-    margin: 0;
+    width:100%;
+    margin: 0 auto;
     border: Blue 2pt solid;
     background-image: linear-gradient(45deg, pink,rgb(0, 255, 255));
     }
