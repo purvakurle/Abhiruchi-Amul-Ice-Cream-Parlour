@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style2.css"/>
+  <link rel="shortcut icon" href="Amul-Girl-Mascot.jpg" type="stylesheet">
+ </head>
+ <body>
+    <div class="main">
+    <div class="nav">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about1.html">About</a></li>
+        <li><a href="menu1.html">Menu</a></li>
+        <li><a href="placeorder.html">Place Order</a></li>
+        </ul>
+        </div>
+<div class="header">
+<div id="box">Abhiruchi Amul Ice Cream Parlour</div>
+</div>
+  <div class="container-fluid">
+   <div class="container">
+    <div class="part1">
+     <fieldset>
+      <legend>Personal Information</legend>
+      Full Name : <input type="text" id="name" /> <br />
+      Your Mobile : <input type="text" id="mobile" /><br />
+      Date : <input type="date" id="date" /><br/>
+     </fieldset>
+    </div>
+
+    <div class="part2">
+     <fieldset>
+      <legend>Your Orders</legend>
+      Butterscotch Tricone(Rs. 25): <input type="text" id="btrsch_tricone" /> <br />
+      Choco Crunch Tricone(Rs. 30): <input type="text" id="chcrnch_tricone" /><br />
+      Two in One Tricone(Rs. 35): <input type="text" id="twoinone_tricone" /><br />
+      Black Currant Tricone(Rs. 35): <input type="text" id="blckcrant_tricone" /><br />
+      Cookie Crunch Tricone(Rs. 35): <input type="text" id="cukicrnch_tricone" /><br />
+      Choco Vanilla Tricone(Rs. 30): <input type="text" id="chvan_tricone" /><br />
+      Pista Badam Tricone(Rs. 30): <input type="text" id="pisbad_tricone" /><br />
+      
+      Rajbhog Tub(Rs. 275): <input type="text" id="rjbhg_tub" /><br />
+      Roasted Almond Tub(Rs. 275): <input type="text" id="rstalm_tub" /><br />
+      Moroccan Dry Fruit Tub(Rs. 215): <input type="text" id="mrcdf_tub" /><br />
+      King Alphonso Tub(Rs. 235): <input type="text" id="alp_tub" /><br />
+      Chocolate Brownie Tub(Rs. 215): <input type="text" id="chbrw_tub" /><br />
+      Fruit N Nut Fantasy Tub(Rs. 215): <input type="text" id="frtnt_tub" /><br />
+      Choco Chips Tub(Rs. 215): <input type="text" id="chchp_tub" /><br />
+
+      Tutti Frutti Pack(Rs. 140): <input type="text" id="tutifruti_pck" /><br />
+      Strawberry Pack(Rs. 110): <input type="text" id="strwbry_pck" /><br />
+      Spannish Saffron and Cream Balls Pack(Rs. 230): <input type="text" id="safncrmballs_pck" /><br />
+      Kesar Pista Pack(Rs. 230): <input type="text" id="kesrpis_pck" /><br />
+      Creamy Almond Pack(Rs. 180): <input type="text" id="crmyalm_pck" /><br />
+      Choco Chips Pack(Rs. 140): <input type="text" id="chchp_pck" /><br />
+
+      Butterscotch Bliss Jumbo Cup(Rs. 25): <input type="text" id="btrsch_jcup" /><br />
+      Chocolate Brownie Jumbo Cup(Rs. 35): <input type="text" id="chbrw_jcup" /><br />
+      Fruit N Nut Fantasy Jumbo Cup(Rs. 35): <input type="text" id="frtnt_jcup" /><br />
+      Golden Pearl Jumbo Cup(Rs. 30): <input type="text" id="gprl_jcup" /><br />
+      King Alphonso Jumbo Cup(Rs. 25): <input type="text" id="alp_jcup" /><br />
+      Rajbhog Jumbo Cup(Rs. 40): <input type="text" id="rjbhg_jcup" /><br />
+      Shalimar Jumbo Cup(Rs. 30): <input type="text" id="shlmr_jcup" /><br />
+      Haldi Ice Cream Jumbo Cup(Rs. 40): <input type="text" id="hldi_jcup" /><br />
+      Pan Nawabi Jumbo Cup(Rs. 25): <input type="text" id="pnwbi_jcup" /><br />
+
+      Afghan Dry Fruit Cup(Rs. 20): <input type="text" id="afghndf_cup" /><br />
+      Butterscotch Bliss Cup(Rs. 50): <input type="text" id="btrsch_cup" /><br />
+      Choco Chips Cup(Rs. 25): <input type="text" id="chchp_cup" /><br />
+      Alphonso Mango Cup(Rs. 15): <input type="text" id="alp_cup" /><br />
+      Kesar Pista Royale Cup(Rs. 30): <input type="text" id="ksrpis_cup" /><br />
+      Rajbhog Cup(Rs. 25): <input type="text" id="rjbhg_cup" /><br />
+      American Nuts Cup(Rs. 25): <input type="text" id="amrcnt_cup" /><br />
+      Kaju Draksh Cup(Rs. 20): <input type="text" id="kjudrksh_cup" /><br />
+      Vanilla Royale Cup(Rs. 20): <input type="text" id="vanroyl_cup" /><br />
+      Strawberry Cup(Rs. 20): <input type="text" id="strwbry_cup" /><br />
+     </fieldset>
+    </div>
+   </div>
+
+   <div class="container">
+    <fieldset>
+     <legend>Your Bill</legend>
+     <h3>Your Name : <span id="name2"></span></h3>
+     <h3>Mobile : <span id="mobile2"></span></h3>
+     <h3>Date : <span id="date2"></span></h3>
+     <table border="1">
+      <thead>
+       <tr>
+        <th>Menu</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Amout</th>
+       </tr>
+      </thead>
+      <tbody id="bill">
+       <tr>
+       </tr>
+      </tbody>
+     </table>
+    </fieldset width:50%>
+    <h4>Total Amout without GST: Rs. <span id="amount">0</span></h2>
+    <h4>Total Amount with GST: Rs.<span id="amount_gst">0</span></h2>
+   </div>
+  </div>
+  </div>
+
+  <script>
+  var  btrsch_tricone= 25,
+     chcrnch_tricone= 30,
+     twoinone_tricone= 35,
+     blckcrant_tricone= 35,
+     cukicrnch_tricone= 35,
+     chvan_tricone= 30,
+     pisbad_tricone= 30,
+     rjbhg_tub= 275,
+     rstalm_tub= 275,
+     mrcdf_tub= 215,
+     alp_tub= 235,
+     chbrw_tub= 215,
+     frtnt_tub= 215,
+     chchp_tub= 215,
+     tutifruti_pck= 140,
+     strwbry_pck= 110,
+     safncrmballs_pck= 230,
+     kesrpis_pck= 230,
+     crmyalm_pck= 180,
+     chchp_pck= 140,
+     btrsch_jcup= 25,
+     chbrw_jcup= 35,
+     frtnt_jcup= 35,
+     gprl_jcup= 30,
+     alp_jcup= 25,
+     rjbhg_jcup= 40,
+     shlmr_jcup= 30,
+     hldi_jcup= 40,
+     pnwbi_jcup= 25,
+     afghndf_cup= 20,
+     btrsch_cup= 50,
+     chchp_cup= 25,
+     alp_cup= 15,
+     ksrpis_cup= 30,
+     rjbhg_cup= 25,
+     amrcnt_cup= 25,
+     kjudrksh_cup= 20,
+     vanroyl_cup= 20,
+     strwbry_cup= 20;
+
+ var  btrsch_tricone_q= 0,
+     chcrnch_tricone_q= 0,
+     twoinone_tricone_q= 0,
+     blckcrant_tricone_q= 0,
+     cukicrnch_tricone_q= 0,
+     chvan_tricone_q= 0,
+     pisbad_tricone_q= 0,
+     rjbhg_tub_q= 0,
+     rstalm_tub_q= 0,
+     mrcdf_tub_q= 0,
+     alp_tub_q= 0,
+     chbrw_tub_q= 0,
+     frtnt_tub_q= 0,
+     chchp_tub_q= 0,
+     tutifruti_pck_q= 0,
+     strwbry_pck_q= 0,
+     safncrmballs_pck_q= 0,
+     kesrpis_pck_q= 0,
+     crmyalm_pck_q= 0,
+     chchp_pck_q= 0,
+     btrsch_jcup_q= 0,
+     chbrw_jcup_q= 0,
+     frtnt_jcup_q= 0,
+     gprl_jcup_q= 0,
+     alp_jcup_q= 0,
+     rjbhg_jcup_q= 0,
+     shlmr_jcup_q= 0,
+     hldi_jcup_q= 0,
+     pnwbi_jcup_q= 0,
+     afghndf_cup_q= 0,
+     btrsch_cup_q= 0,
+     chchp_cup_q= 0,
+     alp_cup_q= 0,
+     ksrpis_cup_q= 0,
+     rjbhg_cup_q= 0,
+     amrcnt_cup_q= 0,
+     kjudrksh_cup_q= 0,
+     vanroyl_cup_q= 0,
+     strwbry_cup_q = 0;
+
+     var name = "";
+
+var  btrsch_triconeBill= "",
+     chcrnch_triconeBill= "",
+     twoinone_triconeBill= "",
+     blckcrant_triconeBill= "",
+     cukicrnch_triconeBill= "",
+     chvan_triconeBill= "",
+     pisbad_triconeBill= "",
+     rjbhg_tubBill= "",
+     rstalm_tubBill= "",
+     mrcdf_tubBill= "",
+     alp_tubBill= "",
+     chbrw_tubBill= "",
+     frtnt_tubBill= "",
+     chchp_tubBill= "",
+     tutifruti_pckBill= "",
+     strwbry_pckBill= "",
+     safncrmballs_pckBill= "",
+     kesrpis_pckBill= "",
+     crmyalm_pckBill= "",
+     chchp_pckBill= "",
+     btrsch_jcupBill= "",
+     chbrw_jcupBill= "",
+     frtnt_jcupBill= "",
+     gprl_jcupBill= "",
+     alp_jcupBill= "",
+     rjbhg_jcupBill= "",
+     shlmr_jcupBill= "",
+     hldi_jcupBill= "",
+     pnwbi_jcupBill= "",
+     afghndf_cupBill= "",
+     btrsch_cupBill= "",
+     chchp_cupBill= "",
+     alp_cupBill= "",
+     ksrpis_cupBill= "",
+     rjbhg_cupBill= "",
+     amrcnt_cupBill= "",
+     kjudrksh_cupBill= "",
+     vanroyl_cupBill= "",
+     strwbry_cupBill= "";
+
+var total_amount = 0;
+document.getElementById("name").addEventListener("keyup", function() {
+    document.getElementById("name2").innerHTML = this.value;
+});
+
+document.getElementById("mobile").addEventListener("keyup", function() {
+    document.getElementById("mobile2").innerHTML = this.value;
+});
+
+document.getElementById("date").addEventListener("keyup", function() {
+    document.getElementById("date2").innerHTML = this.value;
+});
+
+document.getElementById("btrsch_tricone").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        btrsch_triconeBill = "";
+        btrsch_tricone_q = 0;
+        showBill();
+    } else {
+        btrsch_tricone_q = this.value;
+        btrsch_triconeBill = "<tr><td>Butterscotch Tricone</td><td>Rs. " + btrsch_tricone + "</td><td>" + btrsch_tricone_q + "</td><td>" + btrsch_tricone + "x" + btrsch_tricone_q + " = " + btrsch_tricone * btrsch_tricone_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("chcrnch_tricone").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        chcrnch_triconeBill = "";
+        chcrnch_tricone_q = 0;
+        showBill();
+    } else {
+        chcrnch_tricone_q = this.value;
+        chcrnch_triconeBill = "<tr><td>Choco Crunch Tricone</td><td>Rs. " + chcrnch_tricone + "</td><td>" + chcrnch_tricone_q + "</td><td>" + chcrnch_tricone + "x" + chcrnch_tricone_q + " = " + chcrnch_tricone * chcrnch_tricone_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("twoinone_tricone").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        twoinone_triconeBill = "";
+        twoinone_tricone_q = 0;
+        showBill();
+    } else {
+        twoinone_tricone_q = this.value;
+        twoinone_triconeBill = "<tr><td>Two in One Tricone</td><td>Rs. " + twoinone_tricone + "</td><td>" + twoinone_tricone_q + "</td><td>" + twoinone_tricone + "x" + twoinone_tricone_q + " = " + twoinone_tricone * twoinone_tricone_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("blckcrant_tricone").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        blckcrant_triconeBill = "";
+        blckcrant_tricone_q = 0;
+        showBill();
+    } else {
+        blckcrant_tricone_q = this.value;
+        blckcrant_triconeBill = "<tr><td>Black Currant Tricone</td><td>Rs. " + blckcrant_tricone + "</td><td>" + blckcrant_tricone_q + "</td><td>" + blckcrant_tricone + "x" + blckcrant_tricone_q + " = " + blckcrant_tricone * blckcrant_tricone_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("cukicrnch_tricone").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        cukicrnch_triconeBill = "";
+        cukicrnch_tricone_q = 0;
+        showBill();
+    } else {
+        cukicrnch_tricone_q = this.value;
+        cukicrnch_triconeBill = "<tr><td>Cookie Crunch Tricone</td><td>Rs. " + cukicrnch_tricone + "</td><td>" + cukicrnch_tricone_q + "</td><td>" + cukicrnch_tricone + "x" + cukicrnch_tricone_q + " = " + cukicrnch_tricone * cukicrnch_tricone_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("chvan_tricone").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        chvan_triconeBill = "";
+        chvan_tricone_q = 0;
+        showBill();
+    } else {
+        chvan_tricone_q = this.value;
+        chvan_triconeBill = "<tr><td>Choco Vanilla Tricone</td><td>Rs. " + chvan_tricone + "</td><td>" + chvan_tricone_q + "</td><td>" + chvan_tricone + "x" + chvan_tricone_q + " = " + chvan_tricone * chvan_tricone_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("pisbad_tricone").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        pisbad_triconeBill = "";
+        pisbad_tricone_q = 0;
+        showBill();
+    } else {
+        pisbad_tricone_q = this.value;
+        pisbad_triconeBill = "<tr><td>Pista Badam Tricone</td><td>Rs. " + pisbad_tricone + "</td><td>" + pisbad_tricone_q + "</td><td>" + pisbad_tricone + "x" + pisbad_tricone_q + " = " + pisbad_tricone * pisbad_tricone_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("rjbhg_tub").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        rjbhg_tubBill = "";
+        rjbhg_tub_q = 0;
+        showBill();
+    } else {
+        rjbhg_tub_q = this.value;
+        rjbhg_tubBill = "<tr><td>Rajbhog Tub</td><td>Rs. " + rjbhg_tub + "</td><td>" + rjbhg_tub_q + "</td><td>" + rjbhg_tub + "x" + rjbhg_tub_q + " = " + rjbhg_tub * rjbhg_tub_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("rstalm_tub").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        rstalm_tubBill = "";
+        rstalm_tub_q = 0;
+        showBill();
+    } else {
+        rstalm_tub_q = this.value;
+        rstalm_tubBill = "<tr><td>Roasted Almond Tub</td><td>Rs. " + rstalm_tub + "</td><td>" + rstalm_tub_q + "</td><td>" + rstalm_tub + "x" + rstalm_tub_q + " = " + rstalm_tub * rstalm_tub_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("mrcdf_tub").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        mrcdf_tubBill = "";
+        mrcdf_tub_q = 0;
+        showBill();
+    } else {
+        mrcdf_tub_q = this.value;
+        mrcdf_tubBill = "<tr><td>Moroccan Dry Fruit Tub</td><td>Rs. " + mrcdf_tub + "</td><td>" + mrcdf_tub_q + "</td><td>" + mrcdf_tub + "x" + mrcdf_tub_q + " = " + mrcdf_tub * mrcdf_tub_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("alp_tub").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        alp_tubBill = "";
+        alp_tub_q = 0;
+        showBill();
+    } else {
+        alp_tub_q = this.value;
+        alp_tubBill = "<tr><td>King Alphonso Tub</td><td>Rs. " + alp_tub + "</td><td>" + alp_tub_q + "</td><td>" + alp_tub + "x" + alp_tub_q + " = " + alp_tub * alp_tub_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("chbrw_tub").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        chbrw_tubBill = "";
+        chbrw_tub_q = 0;
+        showBill();
+    } else {
+        chbrw_tub_q = this.value;
+        chbrw_tubBill = "<tr><td>Choco Brownie Tub</td><td>Rs. " + chbrw_tub + "</td><td>" + chbrw_tub_q + "</td><td>" + chbrw_tub + "x" + chbrw_tub_q + " = " + chbrw_tub * chbrw_tub_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("frtnt_tub").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        frtnt_tubBill = "";
+        frtnt_tub_q = 0;
+        showBill();
+    } else {
+        frtnt_tub_q = this.value;
+        frtnt_tubBill = "<tr><td>Fruit N Nut Fantasy Tub</td><td>Rs. " + frtnt_tub + "</td><td>" + frtnt_tub_q + "</td><td>" + frtnt_tub + "x" + frtnt_tub_q + " = " + frtnt_tub * frtnt_tub_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("chchp_tub").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        chchp_tubBill = "";
+        chchp_tub_q = 0;
+        showBill();
+    } else {
+        chchp_tub_q = this.value;
+        chchp_tubBill = "<tr><td>Choco Chips Tub</td><td>Rs. " + chchp_tub + "</td><td>" + chchp_tub_q + "</td><td>" + chchp_tub + "x" + chchp_tub_q + " = " + chchp_tub * chchp_tub_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("tutifruti_pck").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        tutifruti_pckBill = "";
+        tutifruti_pck_q = 0;
+        showBill();
+    } else {
+        tutifruti_pck_q = this.value;
+        tutifruti_pckBill = "<tr><td>Tutti Frutti Pack</td><td>Rs. " + tutifruti_pck + "</td><td>" + tutifruti_pck_q + "</td><td>" + tutifruti_pck + "x" + tutifruti_pck_q + " = " + tutifruti_pck * tutifruti_pck_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("strwbry_pck").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        strwbry_pckBill = "";
+        strwbry_pck_q = 0;
+        showBill();
+    } else {
+        strwbry_pck_q = this.value;
+        strwbry_pckBill = "<tr><td>Strawberry Pack</td><td>Rs. " + strwbry_pck + "</td><td>" + strwbry_pck_q + "</td><td>" + strwbry_pck + "x" + strwbry_pck_q + " = " + strwbry_pck * strwbry_pck_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("safncrmballs_pck").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        safncrmballs_pckBill = "";
+        safncrmballs_pck_q = 0;
+        showBill();
+    } else {
+        safncrmballs_pck_q = this.value;
+        safncrmballs_pckBill = "<tr><td>Spannish Saffro and Cream Balls Pack</td><td>Rs. " + safncrmballs_pck + "</td><td>" + safncrmballs_pck_q + "</td><td>" + safncrmballs_pck + "x" + safncrmballs_pck_q + " = " + safncrmballs_pck * safncrmballs_pck_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("kesrpis_pck").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        kesrpis_pckBill = "";
+        kesrpis_pck_q = 0;
+        showBill();
+    } else {
+        kesrpis_pck_q = this.value;
+        kesrpis_pckBill = "<tr><td>Kesar Pista Pack</td><td>Rs. " + kesrpis_pck + "</td><td>" + kesrpis_pck_q + "</td><td>" + kesrpis_pck + "x" + kesrpis_pck_q + " = " + kesrpis_pck * kesrpis_pck_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("crmyalm_pck").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        crmyalm_pckBill = "";
+        crmyalm_pck_q = 0;
+        showBill();
+    } else {
+        crmyalm_pck_q = this.value;
+        crmyalm_pckBill = "<tr><td>Creamy Almond Pack</td><td>Rs. " + crmyalm_pck + "</td><td>" + crmyalm_pck_q + "</td><td>" + crmyalm_pck + "x" + crmyalm_pck_q + " = " + crmyalm_pck * crmyalm_pck_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("chchp_pck").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        chchp_pckBill = "";
+        chchp_pck_q = 0;
+        showBill();
+    } else {
+        chchp_pck_q = this.value;
+        chchp_pckBill = "<tr><td>Choco Chips Pack</td><td>Rs. " + chchp_pck + "</td><td>" + chchp_pck_q + "</td><td>" + chchp_pck + "x" + chchp_pck_q + " = " + chchp_pck * chchp_pck_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("btrsch_jcup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        btrsch_jcupBill = "";
+        btrsch_jcup_q = 0;
+        showBill();
+    } else {
+        btrsch_jcup_q = this.value;
+        btrsch_jcupBill = "<tr><td>Butterscotch Bliss Jumbo Cup</td><td>Rs. " + btrsch_jcup + "</td><td>" + btrsch_jcup_q + "</td><td>" + btrsch_jcup + "x" + btrsch_jcup_q + " = " + btrsch_jcup * btrsch_jcup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("chbrw_jcup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        chbrw_jcupBill = "";
+        chbrw_jcup_q = 0;
+        showBill();
+    } else {
+        chbrw_jcup_q = this.value;
+        chbrw_jcupBill = "<tr><td>Chocolate Brownie Jumbo Cup</td><td>Rs. " + chbrw_jcup + "</td><td>" + chbrw_jcup_q + "</td><td>" + chbrw_jcup + "x" + chbrw_jcup_q + " = " + chbrw_jcup * chbrw_jcup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("frtnt_jcup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        frtnt_jcupBill = "";
+        frtnt_jcup_q = 0;
+        showBill();
+    } else {
+        frtnt_jcup_q = this.value;
+        frtnt_jcupBill = "<tr><td>Fruit N Nut Fantasy Jumbo Cup</td><td>Rs. " + frtnt_jcup + "</td><td>" + frtnt_jcup_q + "</td><td>" + frtnt_jcup + "x" + frtnt_jcup_q + " = " + frtnt_jcup * frtnt_jcup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("gprl_jcup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        gprl_jcupBill = "";
+        gprl_jcup_q = 0;
+        showBill();
+    } else {
+        gprl_jcup_q = this.value;
+        gprl_jcupBill = "<tr><td>Golden Pearl Jumbo Cup</td><td>Rs. " + gprl_jcup + "</td><td>" + gprl_jcup_q + "</td><td>" + gprl_jcup + "x" + gprl_jcup_q + " = " + gprl_jcup * gprl_jcup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("alp_jcup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        alp_jcupBill = "";
+        alp_jcup_q = 0;
+        showBill();
+    } else {
+        alp_jcup_q = this.value;
+        alp_jcupBill = "<tr><td>King Alphonso Jumbo Cup</td><td>Rs. " + alp_jcup + "</td><td>" + alp_jcup_q + "</td><td>" + alp_jcup + "x" + alp_jcup_q + " = " + alp_jcup * alp_jcup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("rjbhg_jcup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        rjbhg_jcupBill = "";
+        rjbhg_jcup_q = 0;
+        showBill();
+    } else {
+        rjbhg_jcup_q = this.value;
+        rjbhg_jcupBill = "<tr><td>Rajbhog Jumbo Cup</td><td>Rs. " + rjbhg_jcup + "</td><td>" + rjbhg_jcup_q + "</td><td>" + rjbhg_jcup + "x" + rjbhg_jcup_q + " = " + rjbhg_jcup * rjbhg_jcup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("shlmr_jcup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        shlmr_jcupBill = "";
+        shlmr_jcup_q = 0;
+        showBill();
+    } else {
+        shlmr_jcup_q = this.value;
+        shlmr_jcupBill = "<tr><td>Shalimar Jumbo Cup</td><td>Rs. " + shlmr_jcup + "</td><td>" + shlmr_jcup_q + "</td><td>" + shlmr_jcup + "x" + shlmr_jcup_q + " = " + shlmr_jcup * shlmr_jcup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("hldi_jcup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        hldi_jcupBill = "";
+        hldi_jcup_q = 0;
+        showBill();
+    } else {
+        hldi_jcup_q = this.value;
+        hldi_jcupBill = "<tr><td>Haldi Ice Cream Jumbo Cup</td><td>Rs. " + hldi_jcup + "</td><td>" + hldi_jcup_q + "</td><td>" + hldi_jcup + "x" + hldi_jcup_q + " = " + hldi_jcup * hldi_jcup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("pnwbi_jcup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        pnwbi_jcupBill = "";
+        pnwbi_jcup_q = 0;
+        showBill();
+    } else {
+        pnwbi_jcup_q = this.value;
+        pnwbi_jcupBill = "<tr><td>Pan Nawabi Jumbo Cup</td><td>Rs. " + pnwbi_jcup + "</td><td>" + pnwbi_jcup_q + "</td><td>" + pnwbi_jcup + "x" + pnwbi_jcup_q + " = " + pnwbi_jcup * pnwbi_jcup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("afghndf_cup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        afghndf_cupBill = "";
+        afghndf_cup_q = 0;
+        showBill();
+    } else {
+        afghndf_cup_q = this.value;
+        afghndf_cupBill = "<tr><td>Afghan Dry Fruit Cup</td><td>Rs. " + afghndf_cup + "</td><td>" + afghndf_cup_q + "</td><td>" + afghndf_cup + "x" + afghndf_cup_q + " = " + afghndf_cup * afghndf_cup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("btrsch_cup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        btrsch_cupBill = "";
+        btrsch_cup_q = 0;
+        showBill();
+    } else {
+        btrsch_cup_q = this.value;
+        btrsch_cupBill = "<tr><td>Butterscotch Bliss Cup</td><td>Rs. " + btrsch_cup + "</td><td>" + btrsch_cup_q + "</td><td>" + btrsch_cup + "x" + btrsch_cup_q + " = " + btrsch_cup * btrsch_cup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("chchp_cup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        chchp_cupBill = "";
+        chchp_cup_q = 0;
+        showBill();
+    } else {
+        chchp_cup_q = this.value;
+        chchp_cupBill = "<tr><td>Choco Chips Cup</td><td>Rs. " + chchp_cup + "</td><td>" + chchp_cup_q + "</td><td>" + chchp_cup + "x" + chchp_cup_q + " = " + chchp_cup * chchp_cup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("alp_cup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        alp_cupBill = "";
+        alp_cup_q = 0;
+        showBill();
+    } else {
+        alp_cup_q = this.value;
+        alp_cupBill = "<tr><td>Alphonso Mango Cup</td><td>Rs. " + alp_cup + "</td><td>" + alp_cup_q + "</td><td>" + alp_cup + "x" + alp_cup_q + " = " + alp_cup * alp_cup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("ksrpis_cup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        ksrpis_cupBill = "";
+        ksrpis_cup_q = 0;
+        showBill();
+    } else {
+        ksrpis_cup_q = this.value;
+        ksrpis_cupBill = "<tr><td>Kesar Pista Royale Cup</td><td>Rs. " + ksrpis_cup + "</td><td>" + ksrpis_cup_q + "</td><td>" + ksrpis_cup + "x" + ksrpis_cup_q + " = " + ksrpis_cup * ksrpis_cup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("rjbhg_cup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        rjbhg_cupBill = "";
+        rjbhg_cup_q = 0;
+        showBill();
+    } else {
+        rjbhg_cup_q = this.value;
+        rjbhg_cupBill = "<tr><td>Rajbhog Cup</td><td>Rs. " + rjbhg_cup + "</td><td>" + rjbhg_cup_q + "</td><td>" + rjbhg_cup + "x" + rjbhg_cup_q + " = " + rjbhg_cup * rjbhg_cup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("amrcnt_cup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        amrcnt_cupBill = "";
+        amrcnt_cup_q = 0;
+        showBill();
+    } else {
+        amrcnt_cup_q = this.value;
+        amrcnt_cupBill = "<tr><td>American Nuts Cup</td><td>Rs. " + amrcnt_cup + "</td><td>" + amrcnt_cup_q + "</td><td>" + amrcnt_cup + "x" + amrcnt_cup_q + " = " + amrcnt_cup * amrcnt_cup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("kjudrksh_cup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        kjudrksh_cupBill = "";
+        kjudrksh_cup_q = 0;
+        showBill();
+    } else {
+        kjudrksh_cup_q = this.value;
+        kjudrksh_cupBill = "<tr><td>Kaju Draksh Cup</td><td>Rs. " + kjudrksh_cup + "</td><td>" + kjudrksh_cup_q + "</td><td>" + kjudrksh_cup + "x" + kjudrksh_cup_q + " = " + kjudrksh_cup * kjudrksh_cup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("vanroyl_cup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        vanroyl_cupBill = "";
+        vanroyl_cup_q = 0;
+        showBill();
+    } else {
+        vanroyl_cup_q = this.value;
+        vanroyl_cupBill = "<tr><td>Vanilla Royale</td><td>Rs. " + vanroyl_cup + "</td><td>" + vanroyl_cup_q + "</td><td>" + vanroyl_cup + "x" + vanroyl_cup_q + " = " + vanroyl_cup * vanroyl_cup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+document.getElementById("strwbry_cup").addEventListener("keyup", function() {
+    if (this.value == "" || this.value == 0) {
+        strwbry_cupBill = "";
+        strwbry_cup_q = 0;
+        showBill();
+    } else {
+        strwbry_cup_q = this.value;
+        strwbry_cupBill = "<tr><td>Strawberry Cup</td><td>Rs. " + strwbry_cup + "</td><td>" + strwbry_cup_q + "</td><td>" + strwbry_cup + "x" + strwbry_cup_q + " = " + strwbry_cup * strwbry_cup_q + "</td></tr>";
+        showBill();
+    }
+});
+
+function showBill() {
+    document.getElementById("bill").innerHTML = btrsch_triconeBill + chcrnch_triconeBill + twoinone_triconeBill + blckcrant_triconeBill + cukicrnch_triconeBill +
+    chvan_triconeBill + pisbad_triconeBill + rjbhg_tubBill + rstalm_tubBill + mrcdf_tubBill + alp_tubBill + chbrw_tubBill + frtnt_tubBill + chchp_tubBill + tutifruti_pckBill +
+    strwbry_pckBill + safncrmballs_pckBill + kesrpis_pckBill + crmyalm_pckBill + chchp_pckBill + btrsch_jcupBill + chbrw_jcupBill + frtnt_jcupBill + gprl_jcupBill + alp_jcupBill + rjbhg_jcupBill + shlmr_jcupBill + hldi_jcupBill + pnwbi_jcupBill + afghndf_cupBill + btrsch_cupBill + chchp_cupBill +
+    alp_cupBill + ksrpis_cupBill + rjbhg_cupBill + amrcnt_cupBill + kjudrksh_cupBill + vanroyl_cupBill + strwbry_cupBill;
+    var without_gst=document.getElementById("amount").innerHTML = btrsch_tricone * btrsch_tricone_q + chcrnch_tricone * chcrnch_tricone_q + twoinone_tricone * twoinone_tricone_q +
+     blckcrant_tricone * blckcrant_tricone_q + cukicrnch_tricone * cukicrnch_tricone_q + chvan_tricone * chvan_tricone_q + pisbad_tricone * pisbad_tricone_q +
+     rjbhg_tub * rjbhg_tub_q + rstalm_tub * rstalm_tub_q + mrcdf_tub * mrcdf_tub_q + alp_tub * alp_tub_q + chbrw_tub * chbrw_tub_q +
+     frtnt_tub * frtnt_tub_q + chchp_tub * chchp_tub_q + tutifruti_pck * tutifruti_pck_q + strwbry_pck * strwbry_pck_q + safncrmballs_pck * safncrmballs_pck_q +
+     kesrpis_pck * kesrpis_pck_q + crmyalm_pck * crmyalm_pck_q + chchp_pck * chchp_pck_q + btrsch_jcup * btrsch_jcup_q + chbrw_jcup * chbrw_jcup_q +
+     frtnt_jcup * frtnt_jcup_q + gprl_jcup * gprl_jcup_q + alp_jcup * alp_jcup_q + rjbhg_jcup * rjbhg_jcup_q + shlmr_jcup * shlmr_jcup_q +
+     hldi_jcup * hldi_jcup_q + pnwbi_jcup * pnwbi_jcup_q + afghndf_cup * afghndf_cup_q + btrsch_cup * btrsch_cup_q + chchp_cup * chchp_cup_q + alp_cup * alp_cup_q +
+     ksrpis_cup * ksrpis_cup_q + rjbhg_cup * rjbhg_cup_q + amrcnt_cup * amrcnt_cup_q + kjudrksh_cup * kjudrksh_cup_q + vanroyl_cup * vanroyl_cup_q +
+     strwbry_cup * strwbry_cup_q;
+    document.getElementById("amount_gst").innerHTML= ((without_gst * 18)/100) + without_gst; 
+}
+</script>
+</body>
+</html>
